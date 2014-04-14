@@ -7,7 +7,7 @@ while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 
 # Get to the directory above the bin directory.
-cd $DIR/..
+cd "$DIR/.."
 
 CONTAINER_TYPE=@INTERACTIVESPACES_CONTAINER_TYPE@
 
